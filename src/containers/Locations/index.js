@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Locations.css';
 import { connect } from 'react-redux';
 import AutoComplete from 'react-google-autocomplete';
-import { addLocation } from '../../actions/index';
+import { addLocation, findProducts} from '../../actions/index';
+
 
 
 //AutoComplete styling
@@ -16,9 +17,23 @@ const styles = {
 }
 
 class Locations extends Component {
+
+constructor(props) {
+  super(props);
+  this.state = {
+    name: '',
+  }
+}
+
   render() {
+    const { findProductsAction } = this.props;
     return (
       <div className='Location'>
+        <div className="Location-nameWrapper">
+          <span> Enter your name </span>
+          <input className="Location-name" value ={this.state.name} onChange={(e)  => this.setState({ name: e.target.value })} />
+
+      </div>
         <AutoComplete
           style={styles}
           //envokes autocomplete function
@@ -37,11 +52,16 @@ class Locations extends Component {
               console.log('place', place)
               const endLatitude = place.geometry.location.lat();
               const endLongitude = place.geometry.location.lng();
-              this.prop.addLocationAction({ endLatitude, endLongitude })
+              this.props.addLocationAction({ endLatitude, endLongitude })
             }}
             type={['address']}
             componentRestrictions={{country: 'us'}}
             />
+
+
+            <button className="Locations-button" onClick={() => findProductsAction(this.state.name) }>Find Location</button>
+
+
 
       </div>
     )
@@ -54,6 +74,7 @@ class Locations extends Component {
 
 const mapDispatchtoProps = (dispatch) => ({
   addLocationAction: (location) => dispatch(addLocation(location)),
+  findProductsAction: (name) => dispatch(findProducts(name))
 })
 
 export default connect(null, mapDispatchtoProps)(Locations);
