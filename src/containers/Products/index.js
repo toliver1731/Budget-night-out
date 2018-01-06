@@ -23,8 +23,14 @@ export class Products extends Component {
             )
           })}
           </div>
+          <div>
             <Link to={"/"}>Back to Homepage</Link>
+            </div>
+            <div>
+            <Link to={"products/:name/:venues"}>Take me to the Venues!!</Link>
+            </div>
         </div>
+
     )
   }
 }

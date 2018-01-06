@@ -9,9 +9,9 @@ import { Router, browserHistory } from 'react-router';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
 import registerServiceWorker from './registerServiceWorker';
-
+//middleware helps control what goes to reducers
 const middleware = [thunk];
-
+//applyMiddleware takes in functions... checks for actions before it hits store
 const createStoreWithMiddleware = applyMiddleware(...middleware) (createStore);
 
 const store = createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
