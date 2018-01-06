@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+//Provider lets connect method get access to state anywhere in app where {} is wrapped
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import routes from './routes';

@@ -7,8 +7,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h2>Budget Night Out!</h2>
+          <h4>Have fun, save money, and make it home safe!!</h4>
           </div>
-          <div className="App-childRoutes"> 
+          <div className="App-childRoutes">
             {this.props.children}
             </div>
       </div>

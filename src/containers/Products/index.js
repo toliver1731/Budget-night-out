@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Products.css';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
 export class Products extends Component {
 
@@ -22,7 +23,7 @@ export class Products extends Component {
             )
           })}
           </div>
-
+            <Link to={"/"}>Back to Homepage</Link>
         </div>
     )
   }
