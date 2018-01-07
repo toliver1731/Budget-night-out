@@ -1,5 +1,7 @@
+import { browserHistory } from 'react-router';
 export const ADD_LOCATION ='ADD_LOCATION';
 export const FIND_PRODUCTS = 'FIND_PRODUCTS';
+
 //zUWS65TFLrOdra2hAj92nH9FykLfoXGyCBGsPVWx
 
 export const addLocation = (location) => ({
@@ -27,8 +29,13 @@ export const findProducts = (name) => {
         headers,
     })
     .then((data) => data.json())
-    .then((estimationData) => {
-      console.log('estimationData', estimationData)
+    .then(({prices}) => {
+      dispatch({
+        type: FIND_PRODUCTS,
+        payload: prices
+      })
+
+      browserHistory.push(`/products/${name}`)
     })
   }
 
