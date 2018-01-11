@@ -47,14 +47,14 @@ constructor(props) {
           />
           <AutoComplete
             style={styles}
-            //envokes autocomplete function
+            
             onPlaceSelected={(place) => {
               console.log('place', place)
               const endLatitude = place.geometry.location.lat();
               const endLongitude = place.geometry.location.lng();
               this.props.addLocationAction({ endLatitude, endLongitude })
             }}
-            type={['address']}
+            types={['address']}
             componentRestrictions={{country: 'us'}}
             />
 

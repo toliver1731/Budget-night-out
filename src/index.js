@@ -5,6 +5,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import routes from './routes';
+//browserHisty allows users to move forward and back
 import { Router, browserHistory } from 'react-router';
 import thunk from 'redux-thunk';
 import reducers from './reducers';

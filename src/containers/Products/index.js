@@ -9,7 +9,7 @@ export class Products extends Component {
     const { products } = this.props;
     return (
       <div className="Products">
-        Hi i am {this.props.params.name}
+        Name: {this.props.params.name}
         <div className="Product-list">
           {products.map((product) => {
             return (
@@ -30,6 +30,7 @@ export class Products extends Component {
             <Link to={"products/:name/:venues"}>Take me to the Venues!!</Link>
             </div>
         </div>
+
 
     )
   }

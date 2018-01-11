@@ -1,5 +1,5 @@
 import { ADD_LOCATION } from '../actions'
-
+//Takes in initial state; coordinates sent to uber
 const INIT_STATE = {
   startLatitude: '',
   startLongitude: '',
