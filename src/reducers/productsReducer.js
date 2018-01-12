@@ -1,4 +1,4 @@
-import { FIND_PRODUCTS } from '../actions';
+import { FIND_PRODUCTS } from '../actions/index.js';
 
 const INIT_STATE = [];
 

@@ -1,4 +1,4 @@
-import { ADD_LOCATION } from '../actions'
+import { ADD_LOCATION } from '../actions/index.js'
 //Takes in initial state; coordinates sent to uber
 const INIT_STATE = {
   startLatitude: '',

@@ -36,7 +36,7 @@ constructor(props) {
       </div>
         <AutoComplete
           style={styles}
-          //envokes autocomplete function
+          //obtains start latitute and longitude
           onPlaceSelected={(place) => {
             const startLatitude = place.geometry.location.lat();
             const startLongitude = place.geometry.location.lng();
@@ -47,7 +47,7 @@ constructor(props) {
           />
           <AutoComplete
             style={styles}
-            
+            //obtains end latitude and longitude
             onPlaceSelected={(place) => {
               console.log('place', place)
               const endLatitude = place.geometry.location.lat();
