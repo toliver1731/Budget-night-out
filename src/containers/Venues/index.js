@@ -5,6 +5,7 @@ import helpers from '../../actions/helpers';
 import Results from "../Venues/Results";
 import Query from "../Venues/Query";
 
+<<<<<<< HEAD
 
 class Search extends React.Component {
 	constructor(props) {
@@ -48,3 +49,6 @@ class Search extends React.Component {
 }
 
 export default Search;
+=======
+export const Venue = ({ name }) => <li>{name}</li>;
+>>>>>>> 1e0059de80d071360c2dca1697ba7b95facec3f9
