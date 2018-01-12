@@ -9,7 +9,10 @@ export class Products extends Component {
     const { products } = this.props;
     return (
       <div className="Products">
-        Name: {this.props.params.name}
+         Good evening {
+           this.props.params.name
+         }. 
+         Here are your options
         <div className="Product-list">
           {products.map((product) => {
             return (

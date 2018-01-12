@@ -1,0 +1,27 @@
+.Products{
+    font-size: 25px;
+    border-color: black;
+    background-color: aqua;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family: josefin sans;
+
+}
+
+
+.Product-list {
+    background-color: #808080;
+    padding: 20px;
+   
+    
+     
+
+}
+
+.Product-item {
+    width: 400px;
+    background-color: #1d0e0e;
+    border-color: 5px solid #1d0e0e;
+    padding: 14px;
+   
+}
