@@ -1,27 +1,23 @@
 .Products{
-    font-size: 25px;
-    border-color: black;
-    background-color: aqua;
+    font-size: 30px;
+    color: linen;
     padding: 20px;
     margin-bottom: 15px;
     font-family: josefin sans;
-
+    background-image: url(http://scienceblogs.com/startswithabang/files/2013/12/M47_italia-590x485.jpg);
 }
 
-
 .Product-list {
-    background-color: #808080;
+    background-image: url(https://i0.wp.com/summitrock.co.za/wp-content/uploads/2017/07/Metal-dark.jpg?fit=1976%2C1270);
     padding: 20px;
-   
-    
-     
-
+    border: 1px solid white;
 }
 
 .Product-item {
-    width: 400px;
-    background-color: #1d0e0e;
-    border-color: 5px solid #1d0e0e;
+    background-image: url(http://www.addcovers.com/covers/nhotg997krz7y07.jpg);
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    text-align: center;
     padding: 14px;
-   
 }

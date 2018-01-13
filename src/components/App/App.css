@@ -4,6 +4,7 @@
 
 
 .App-header {
+  position: relative;
   background: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/9f1YHf6/drivers-view-of-the-road-when-driving-in-the-city-through-green-traffic-lights-at-night_ep7x0nifl__F0000.png") no-repeat bottom fixed;
   height: 150px;
   padding: 20px;
